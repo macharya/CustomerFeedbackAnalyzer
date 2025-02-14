@@ -3,7 +3,7 @@ from openai import OpenAI
 import pandas as pd
 import plotly.express as px
 
-openai_api_key = st.text_input("Enter API Key")
+openai_api_key = st.text_input("Enter API Key",type='password')
 
 st.title("🥗 Customer Review Sentiment Analyzer ")
 st.markdown("This app analyzes the sentiment of customer reviews to gain insights into their opinions.")
