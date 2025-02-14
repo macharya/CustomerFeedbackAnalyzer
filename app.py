@@ -3,13 +3,10 @@ from openai import OpenAI
 import pandas as pd
 import plotly.express as px
 
-openai_api_key = "" #will be picked from an input file later
+openai_api_key = st.text_input("Enter API Key")
 
 st.title("🥗 Customer Review Sentiment Analyzer ")
 st.markdown("This app analyzes the sentiment of customer reviews to gain insights into their opinions.")
-
-user_input = st.text_input("Enter review")
-st.write("Current user input is",user_input)
 
 #import pandas as pd
 #df=pd.read_csv("reviews.csv")
